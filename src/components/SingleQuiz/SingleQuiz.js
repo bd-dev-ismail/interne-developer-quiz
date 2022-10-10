@@ -25,8 +25,8 @@ const SingleQuiz = ({ quiz, correct, setCorrect }) => {
   return (
     <>
       <div>
-        <div className="shadow-2xl border-accent border rounded lg:w-[50rem] mx-auto p-10 my-5">
-          <h3 className="text-2xl font-semibold py-8">{question}</h3>
+        <div className="shadow-2xl border-accent border rounded lg:w-[50rem] mx-auto p-5 my-5">
+          <h3 className="text-2xl font-semibold py-2">{question}</h3>
           <div className="lg:w-[400px] mx-auto text-xl ">
             <button onClick={() => checkAns(a)} className="w-full">
               <div className={`border-2 p-3 my-3 bg-gray-200 hover:bg-success`}>

@@ -22,7 +22,7 @@ const Header = () => {
             <ul className="flex items-center hidden space-x-8 lg:flex">
               <li>
                 <NavLink
-                  to="/"
+                  to="/home"
                   aria-label="Our product"
                   title="Our product"
                   className="font-medium tracking-wide custom-text transition-colors duration-200 hover:text-teal-accent-400"

@@ -8,10 +8,10 @@ const Quiz = () => {
     console.log(quizInfo);
     const [correct , setCorrect] = useState(0)
     return (
-      <div className="my-3 container mx-auto">
+      <div className=" container mx-auto">
         <div>
           <div>
-            <h3 className="text-4xl font-bold">{quizData.data.name} Quizes</h3>
+            <h3 className="text-4xl font-bold mt-12">{quizData.data.name} Quizes</h3>
           </div>
           <div>
             <p className="text-2xl mt-5">
@@ -20,7 +20,7 @@ const Quiz = () => {
           </div>
         </div>
 
-        <div className="my-10">
+        <div>
           {quizInfo.map((quiz) => (
             <SingleQuiz
               quiz={quiz}
