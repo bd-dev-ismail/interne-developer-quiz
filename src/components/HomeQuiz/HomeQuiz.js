@@ -7,6 +7,7 @@ const HomeQuiz = ({ quiz }) => {
     const navigate = useNavigate();
     const handalStartQuiz = ()=>{
       navigate(`../quiz/${id}`);
+      
     }
   return (
     <>
@@ -24,6 +25,7 @@ const HomeQuiz = ({ quiz }) => {
           <div className="card-actions justify-end">
             <button
               onClick={handalStartQuiz}
+              
               className="btn btn-accent custom-text"
             >
               Start Quiz

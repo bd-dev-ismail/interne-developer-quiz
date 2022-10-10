@@ -11,11 +11,16 @@ const Quiz = () => {
       <div className=" container mx-auto">
         <div>
           <div>
-            <h3 className="text-4xl font-bold mt-12">{quizData.data.name} Quizes</h3>
+            <h3 id="quiz" className="text-4xl font-bold mt-12">
+              {quizData.data.name} Quizes
+            </h3>
           </div>
           <div>
             <p className="text-2xl mt-5">
-              Your Score is  <span className='text-error'>{correct}/{quizInfo.length}</span>
+              Your Score is{" "}
+              <span className="text-error">
+                {correct}/{quizInfo.length}
+              </span>
             </p>
           </div>
         </div>

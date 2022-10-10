@@ -34,7 +34,7 @@ const Header = () => {
                   Home
                 </NavLink>
               </li>
-              {/* <li>
+              <li>
                 <NavLink
                   to="/quiz"
                   aria-label="Our product"
@@ -47,7 +47,7 @@ const Header = () => {
                 >
                   Quiz
                 </NavLink>
-              </li> */}
+              </li>
               <li>
                 <NavLink
                   to="/statistics"
