@@ -25,27 +25,39 @@ const Header = () => {
                   to="/home"
                   aria-label="Our product"
                   title="Our product"
-                  className="font-medium tracking-wide custom-text transition-colors duration-200 hover:text-teal-accent-400"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-primary font-bold underline underline-offset-8"
+                      : "text-custom font-bold"
+                  }
                 >
                   Home
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink
                   to="/quiz"
                   aria-label="Our product"
                   title="Our product"
-                  className="font-medium tracking-wide custom-text transition-colors duration-200 hover:text-teal-accent-400"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-primary font-bold underline underline-offset-8"
+                      : "text-custom font-bold"
+                  }
                 >
                   Quiz
                 </NavLink>
-              </li>
+              </li> */}
               <li>
                 <NavLink
                   to="/statistics"
                   aria-label="Product pricing"
                   title="Product pricing"
-                  className="font-medium tracking-wide custom-text transition-colors duration-200 hover:text-teal-accent-400"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-primary font-bold underline underline-offset-8"
+                      : "text-custom font-bold"
+                  }
                 >
                   Statistics
                 </NavLink>
@@ -55,7 +67,11 @@ const Header = () => {
                   to="/blog"
                   aria-label="About us"
                   title="About us"
-                  className="font-medium tracking-wide custom-text transition-colors duration-200 hover:text-teal-accent-400"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-primary font-bold underline underline-offset-8"
+                      : "text-custom font-bold"
+                  }
                 >
                   Blog
                 </NavLink>
@@ -84,7 +100,7 @@ const Header = () => {
                 </svg>
               </button>
               {isMenuOpen && (
-                <div className="absolute top-0 left-0 w-full">
+                <div className="absolute top-0 left-0 w-full z-10 shadow-2xl">
                   <div className="p-5 bg-white border rounded shadow-sm">
                     <div className="flex items-center justify-between mb-4">
                       <div>
@@ -126,12 +142,16 @@ const Header = () => {
                             to="/home"
                             aria-label="Our product"
                             title="Our product"
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            className={({ isActive }) =>
+                              isActive
+                                ? "text-primary font-bold underline underline-offset-8"
+                                : "text-custom font-bold"
+                            }
                           >
                             Home
                           </NavLink>
                         </li>
-                        <li>
+                        {/* <li>
                           <NavLink
                             to="/quiz"
                             aria-label="Our product"
@@ -140,13 +160,17 @@ const Header = () => {
                           >
                             Quiz
                           </NavLink>
-                        </li>
+                        </li> */}
                         <li>
                           <NavLink
                             to="/statistics"
                             aria-label="Product pricing"
                             title="Product pricing"
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            className={({ isActive }) =>
+                              isActive
+                                ? "text-primary font-bold underline underline-offset-8"
+                                : "text-custom font-bold"
+                            }
                           >
                             Statistics
                           </NavLink>
@@ -156,7 +180,11 @@ const Header = () => {
                             to="/blog"
                             aria-label="About us"
                             title="About us"
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            className={({ isActive }) =>
+                              isActive
+                                ? "text-primary font-bold underline underline-offset-8"
+                                : "text-custom font-bold"
+                            }
                           >
                             Blog
                           </NavLink>
