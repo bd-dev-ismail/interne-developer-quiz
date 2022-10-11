@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import { EyeSlashIcon } from "@heroicons/react/24/solid";
 const SingleQuiz = ({ quiz, correct, setCorrect, index }) => {
   const [show, setShow] = useState(false);
-  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { question, options, correctAnswer } = quiz;
   const [a, b, c, d] = options;
   const checkAns = (question) => {
