@@ -34,7 +34,7 @@ const SingleQuiz = ({ quiz, correct, setCorrect, index }) => {
         <div className="shadow-2xl border-accent border rounded lg:w-[55rem] mx-auto p-5 my-5">
           <div className="flex justify-between items-center">
             <h3 className="text-2xl font-semibold py-2">
-             {index}. {question ? question.slice(3, -4) : "No Question"}
+            Quiz {index}. {question ? question.slice(3, -4) : "No Question"}
             </h3>
             <button onClick={showAns}>
               <EyeSlashIcon className="h-8 w-8 text-primary" />
