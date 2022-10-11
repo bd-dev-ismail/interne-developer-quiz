@@ -27,27 +27,27 @@ const Header = () => {
                   title="Our product"
                   className={({ isActive }) =>
                     isActive
-                      ? "text-primary font-bold underline underline-offset-8"
-                      : "text-custom font-bold"
+                      ? "text-primary font-semibold underline underline-offset-8"
+                      : "text-custom font-semibold"
                   }
                 >
                   Home
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink
                   to="/quiz"
                   aria-label="Our product"
                   title="Our product"
                   className={({ isActive }) =>
                     isActive
-                      ? "text-primary font-bold underline underline-offset-8"
-                      : "text-custom font-bold"
+                      ? "text-primary font-semibold underline underline-offset-8"
+                      : "text-custom font-semibold"
                   }
                 >
                   Quiz
                 </NavLink>
-              </li>
+              </li> */}
               <li>
                 <NavLink
                   to="/statistics"
@@ -55,8 +55,8 @@ const Header = () => {
                   title="Product pricing"
                   className={({ isActive }) =>
                     isActive
-                      ? "text-primary font-bold underline underline-offset-8"
-                      : "text-custom font-bold"
+                      ? "text-primary font-semibold underline underline-offset-8"
+                      : "text-custom font-semibold"
                   }
                 >
                   Statistics
@@ -69,11 +69,25 @@ const Header = () => {
                   title="About us"
                   className={({ isActive }) =>
                     isActive
-                      ? "text-primary font-bold underline underline-offset-8"
-                      : "text-custom font-bold"
+                      ? "text-primary font-semibold underline underline-offset-8"
+                      : "text-custom font-semibold"
                   }
                 >
                   Blog
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/contact"
+                  aria-label="About us"
+                  title="About us"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-primary font-semibold underline underline-offset-8"
+                      : "text-custom font-semibold"
+                  }
+                >
+                  Contact Us
                 </NavLink>
               </li>
             </ul>
@@ -144,8 +158,8 @@ const Header = () => {
                             title="Our product"
                             className={({ isActive }) =>
                               isActive
-                                ? "text-primary font-bold underline underline-offset-8"
-                                : "text-custom font-bold"
+                                ? "text-primary font-semibold underline underline-offset-8"
+                                : "text-custom font-semibold"
                             }
                           >
                             Home
@@ -168,8 +182,8 @@ const Header = () => {
                             title="Product pricing"
                             className={({ isActive }) =>
                               isActive
-                                ? "text-primary font-bold underline underline-offset-8"
-                                : "text-custom font-bold"
+                                ? "text-primary font-semibold underline underline-offset-8"
+                                : "text-custom font-semibold"
                             }
                           >
                             Statistics
@@ -182,11 +196,25 @@ const Header = () => {
                             title="About us"
                             className={({ isActive }) =>
                               isActive
-                                ? "text-primary font-bold underline underline-offset-8"
-                                : "text-custom font-bold"
+                                ? "text-primary font-semibold underline underline-offset-8"
+                                : "text-custom font-semibold"
                             }
                           >
                             Blog
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink
+                            to="/contact"
+                            aria-label="About us"
+                            title="About us"
+                            className={({ isActive }) =>
+                              isActive
+                                ? "text-primary font-semibold underline underline-offset-8"
+                                : "text-custom font-semibold"
+                            }
+                          >
+                            Contact Us
                           </NavLink>
                         </li>
                       </ul>

@@ -4,6 +4,7 @@ import Quiz from "../components/Quiz/Quiz";
 import Statistics from "../components/Statistics/Statistics";
 import Blog from "../components/Blog/Blog";
 import Main from "../layout/Main";
+import Contact from "../components/Contact/Contact";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -42,6 +43,7 @@ const router = createBrowserRouter([
         element: <Statistics></Statistics>,
       },
       { path: "/blog", element: <Blog></Blog> },
+      { path: "/contact", element: <Contact></Contact>},
     ],
   },
 ]);

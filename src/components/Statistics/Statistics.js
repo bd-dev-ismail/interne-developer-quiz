@@ -17,7 +17,7 @@ const Statistics = () => {
   const data = quizsData.data;
    return (
      <>
-       <div className='container mx-auto'>
+       <div className="container mx-auto">
          <h3 className="text-3xl font-bold my-6">Developer Quiz Chart</h3>
          <div className="chart">
            <div className="chart-container">
@@ -46,6 +46,9 @@ const Statistics = () => {
                </AreaChart>
              </ResponsiveContainer>
            </div>
+           <h3 className="text-xl font-semibold mt-3 underline underline-offset-4">
+             React, JavaScript, Css & Git Graph.
+           </h3>
          </div>
        </div>
      </>

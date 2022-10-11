@@ -26,7 +26,7 @@ const Hero = () => {
                   is the name everyone gives to their mistakes.
                 </p>
               </div>
-              <div className="flex flex-col items-center md:flex-row">
+              <div className="flex flex-col items-center justify-center md:flex-row">
                 <Link
                   to="/statistics"
                   className="inline-flex items-center justify-center w-full h-12 px-6 mb-3 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto md:mr-4 md:mb-0 btn btn-accent"
