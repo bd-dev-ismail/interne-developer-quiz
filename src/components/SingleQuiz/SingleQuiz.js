@@ -3,6 +3,8 @@ import { toast } from 'react-toastify';
 import { EyeSlashIcon } from "@heroicons/react/24/solid";
 const SingleQuiz = ({ quiz, correct, setCorrect, index }) => {
   const [show, setShow] = useState(false);
+
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -10,6 +12,7 @@ const SingleQuiz = ({ quiz, correct, setCorrect, index }) => {
   const { question, options, correctAnswer } = quiz;
   const [a, b, c, d] = options;
   const checkAns = (question) => {
+    
     if (question === correctAnswer) {
       toast.success("You Answer is Correct", { autoClose: 500 });
       const incrase = correct + 1;
@@ -27,14 +30,14 @@ const SingleQuiz = ({ quiz, correct, setCorrect, index }) => {
   const showAns = () => {
     setShow(!show);
   };
-  console.log();
+  console.log(options.length);
   return (
     <>
       <div>
         <div className="shadow-2xl border-accent border rounded lg:w-[55rem] mx-auto p-5 my-5">
           <div className="flex justify-between items-center">
             <h3 className="text-2xl font-semibold py-2">
-            Quiz {index}. {question ? question.slice(3, -4) : "No Question"}
+              Quiz {index}. {question ? question.slice(3, -4) : "No Question"}
             </h3>
             <button onClick={showAns}>
               <EyeSlashIcon className="h-8 w-8 text-primary" />
@@ -57,9 +60,19 @@ const SingleQuiz = ({ quiz, correct, setCorrect, index }) => {
               </div>
             </button>
             <button onClick={() => checkAns(d)} className="w-full">
-              <div className={`border-2 p-3 my-3 bg-gray-200 hover:bg-success`}>
-                <p>{d ? d : "No Found 4th Option"}</p>
-              </div>
+              {options.length === 4 ? (
+                <div
+                  className={`border-2 p-3 my-3 bg-gray-200 hover:bg-success`}
+                >
+                  <p>{d}</p>
+                </div>
+              ) : (
+                <div
+                  className={`border-2 p-3 my-3 bg-gray-200 hover:bg-success hidden`}
+                >
+                 
+                </div>
+              )}
             </button>
             {show ? (
               <button className="w-full">
