@@ -28,7 +28,7 @@ const Header = () => {
                   className={({ isActive }) =>
                     isActive
                       ? "text-primary font-semibold underline underline-offset-8"
-                      : "text-custom font-semibold"
+                      : "custom-text font-semibold"
                   }
                 >
                   Home
@@ -42,7 +42,7 @@ const Header = () => {
                   className={({ isActive }) =>
                     isActive
                       ? "text-primary font-semibold underline underline-offset-8"
-                      : "text-custom font-semibold"
+                      : "custom-text font-semibold"
                   }
                 >
                   Quiz
@@ -56,7 +56,7 @@ const Header = () => {
                   className={({ isActive }) =>
                     isActive
                       ? "text-primary font-semibold underline underline-offset-8"
-                      : "text-custom font-semibold"
+                      : "custom-text font-semibold"
                   }
                 >
                   Statistics
@@ -70,7 +70,7 @@ const Header = () => {
                   className={({ isActive }) =>
                     isActive
                       ? "text-primary font-semibold underline underline-offset-8"
-                      : "text-custom font-semibold"
+                      : "custom-text font-semibold"
                   }
                 >
                   Blog
@@ -84,7 +84,7 @@ const Header = () => {
                   className={({ isActive }) =>
                     isActive
                       ? "text-primary font-semibold underline underline-offset-8"
-                      : "text-custom font-semibold"
+                      : "custom-text font-semibold"
                   }
                 >
                   Login
@@ -159,7 +159,7 @@ const Header = () => {
                             className={({ isActive }) =>
                               isActive
                                 ? "text-primary font-semibold underline underline-offset-8"
-                                : "text-custom font-semibold"
+                                : "custom-text font-semibold"
                             }
                           >
                             Home
@@ -183,7 +183,7 @@ const Header = () => {
                             className={({ isActive }) =>
                               isActive
                                 ? "text-primary font-semibold underline underline-offset-8"
-                                : "text-custom font-semibold"
+                                : "custom-text font-semibold"
                             }
                           >
                             Statistics
@@ -197,7 +197,7 @@ const Header = () => {
                             className={({ isActive }) =>
                               isActive
                                 ? "text-primary font-semibold underline underline-offset-8"
-                                : "text-custom font-semibold"
+                                : "custom-text font-semibold"
                             }
                           >
                             Blog
@@ -211,7 +211,7 @@ const Header = () => {
                             className={({ isActive }) =>
                               isActive
                                 ? "text-primary font-semibold underline underline-offset-8"
-                                : "text-custom font-semibold"
+                                : "custom-text font-semibold"
                             }
                           >
                             Login
