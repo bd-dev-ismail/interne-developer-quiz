@@ -11,7 +11,7 @@ const HomeQuiz = ({ quiz }) => {
     }
   return (
     <>
-      <div className="card card-compact w-[360px] bg-base-300 shadow-xxl border-2 border-accent">
+      <div className="card card-compact w-[360px] mx-auto  md:w-[300px] bg-base-300 shadow-xxl border-2 border-accent">
         <figure>
           <img
             src={logo ? logo : "No Image"}

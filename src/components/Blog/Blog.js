@@ -56,7 +56,10 @@ const Blog = () => {
             </p>
           </div>
           <div className="space-y-4 text-start">
-            <Item title="What is the purpose of React Router?">
+            <Item
+              
+              title="What is the purpose of React Router?"
+            >
               React Router is a JavaScript library used to handle client and
               server-side routing in React applications. It allows the creation
               of single-page web or mobile apps that allows navigation without
