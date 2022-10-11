@@ -30,7 +30,7 @@ const SingleQuiz = ({ quiz, correct, setCorrect, index }) => {
   const showAns = () => {
     setShow(!show);
   };
-  console.log(options.length);
+  
   return (
     <>
       <div>
