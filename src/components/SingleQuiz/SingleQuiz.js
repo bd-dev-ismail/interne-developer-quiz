@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { toast } from 'react-toastify';
-
+import { EyeSlashIcon } from "@heroicons/react/24/solid";
 const SingleQuiz = ({ quiz, correct, setCorrect }) => {
-  // console.log(quiz);
+  const [show, setShow] = useState(false);
+  
   const { question, options, correctAnswer } = quiz;
   const [a, b, c, d] = options;
   const checkAns = (question) => {
@@ -22,11 +23,20 @@ const SingleQuiz = ({ quiz, correct, setCorrect }) => {
        return;
     }
   };
+  const showAns = ()=>{
+    setShow(!show)
+  }
+ console.log();
   return (
     <>
       <div>
-        <div className="shadow-2xl border-accent border rounded lg:w-[50rem] mx-auto p-5 my-5">
-          <h3 className="text-2xl font-semibold py-2">{question}</h3>
+        <div className="shadow-2xl border-accent border rounded lg:w-[55rem] mx-auto p-5 my-5">
+          <div className="flex justify-between items-center">
+            <h3 className="text-2xl font-semibold py-2">{question}</h3>
+            <button onClick={showAns}>
+              <EyeSlashIcon className="h-8 w-8 text-primary" />
+            </button>
+          </div>
           <div className="lg:w-[400px] mx-auto text-xl ">
             <button onClick={() => checkAns(a)} className="w-full">
               <div className={`border-2 p-3 my-3 bg-gray-200 hover:bg-success`}>
@@ -48,6 +58,13 @@ const SingleQuiz = ({ quiz, correct, setCorrect }) => {
                 <p>{d ? d : "No Found 4th Option"}</p>
               </div>
             </button>
+            {
+              show ? <button className="w-full">
+              <div className={`border-2 p-3 my-3 bg-primary text-white`}>
+               <p>Answer: {correctAnswer}</p>
+              </div>
+            </button> : undefined
+            }
           </div>
         </div>
       </div>

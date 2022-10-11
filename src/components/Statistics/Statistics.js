@@ -18,7 +18,7 @@ const Statistics = () => {
    return (
      <>
        <div className='container mx-auto'>
-         <h3 className="text-3xl font-bold my-6">Total Developer Quiz Chart</h3>
+         <h3 className="text-3xl font-bold my-6">Developer Quiz Chart</h3>
          <div className="chart">
            <div className="chart-container">
              <ResponsiveContainer width="100%" height="100%">
