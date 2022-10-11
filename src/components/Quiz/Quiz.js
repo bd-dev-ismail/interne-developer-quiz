@@ -3,10 +3,10 @@ import { useLoaderData } from 'react-router-dom';
 import SingleQuiz from '../SingleQuiz/SingleQuiz';
 
 const Quiz = () => {
+  const [correct , setCorrect] = useState(0);
     const quizData = useLoaderData();
     const quizInfo = quizData.data.questions;
-    console.log(quizInfo);
-    const [correct , setCorrect] = useState(0)
+
     return (
       <div className=" container mx-auto">
         <div>
@@ -26,12 +26,13 @@ const Quiz = () => {
         </div>
 
         <div>
-          {quizInfo.map((quiz) => (
+          {quizInfo.map((quiz, index) => (
             <SingleQuiz
               quiz={quiz}
               key={quiz.id}
               setCorrect={setCorrect}
               correct={correct}
+              index={index + 1}
             ></SingleQuiz>
           ))}
         </div>
