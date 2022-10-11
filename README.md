@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Interne Developer Quiz Repository
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+------------
 
-## Available Scripts
 
-In the project directory, you can run:
+An Awesome Single Page Quiz Cracker Website for Interne Developer. We Have Also Published  our blogs. In the blogs page we provide interview question for freshers.Our quizes on topic based like React, Javascript, Css & git . Now we have almost 36 quizes. we are working on update it regullary .
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Live Site 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+------------
+**Hosted In Netlify -> [Interne Developer Quiz](https://interne-developer-quiz-assignment9.netlify.app/ "Interne Developer Quiz")**
 
-### `npm test`
+### Features & Details 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+------------
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Dynamic Route (Route is the conditionally shown component that renders some UI when its path matches the current URL).
+- Install React Router Dom
+- Loader use for fetch data from Api.
+- Conditional Rendering use for quiz right or wrong answer finding.
+- State use for count total score of quiz & show correct answer click on eye icon.
+- Showing Toast on every click of quiz , is the click answer is true or false.
+- Those Design Create based on Tailwind & DaysiUi.
+- Use HeroIcon for awesome icons in our website

@@ -87,7 +87,7 @@ const Header = () => {
                       : "text-custom font-semibold"
                   }
                 >
-                  Contact Us
+                  Login
                 </NavLink>
               </li>
             </ul>
@@ -214,7 +214,7 @@ const Header = () => {
                                 : "text-custom font-semibold"
                             }
                           >
-                            Contact Us
+                            Login
                           </NavLink>
                         </li>
                       </ul>
